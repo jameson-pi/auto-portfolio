@@ -2,14 +2,12 @@
 <script>
     import data from "$lib/info.json";
     import Header from "$lib/header.svelte";
-    import Parallax from "$lib/paralax.svelte";
     import Paralax from "$lib/paralax.svelte";
     let name = data.name;
     let title = data.title;
     let description = data.summary;
     let jobs = data.experience;
     let projects = data.projects;
-    $: contacts = Object.values(data.contact);
 </script>
 
 <style>
@@ -130,3 +128,4 @@ h2 {
     </div>
 
 </div>
+
