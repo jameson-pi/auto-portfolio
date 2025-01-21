@@ -1,38 +1,37 @@
-# sv
+# Instructions to Change All Fields of `info.json`
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+To update the fields in the `info.json` file, follow these steps:
 
-## Creating a project
+1. **Locate the `info.json` File**:
+    - Navigate to the directory where `info.json` is stored.
 
-If you're seeing this, you've probably already done this step. Congrats!
+2. **Open the File**:
+    - Use a text editor of your choice (e.g., VSCode, Sublime Text, Notepad++) to open the `info.json` file.
 
-```bash
-# create a new project in the current directory
-npx sv create
+3. **Edit the Fields**:
+    - The `info.json` file is structured in JSON format. Each field is a key-value pair. Update the values as needed. For example:
+      ```json
+        {
+            "name": "Your Nam",
+            "title": "Your Title",
+            "location": "City, State",
+            "contact": {
+                "email": "your.email@example.com",
+                "phone": "123-456-7890",
+                "website": "https://yourwebsite.com",
+                "linkedin": "https://linkedin.com/in/yourprofile",
+                "github": "https://github.com/yourusername"
+            }
+        }
+      ```
 
-# create a new project in my-app
-npx sv create my-app
-```
+4. **Save the Changes**:
+    - After making the necessary changes, save the file.
 
-## Developing
+5. **Validate the JSON**:
+    - Ensure that the JSON syntax is correct. You can run the file and see if it makes any errors
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+6. **Close the File**:
+    - Once validated and saved, close the text editor.
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+By following these steps, you can successfully update all the fields in the `info.json` file.

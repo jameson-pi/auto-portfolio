@@ -1,6 +1,7 @@
 {
-    "name": "Your Nam",
+    "name": "JamesonPi",
     "title": "Your Title",
+    "location": "City, State",
     "contact": {
         "email": "your.email@example.com",
         "phone": "123-456-7890",
@@ -46,6 +47,14 @@
                 "javascript"
             ],
             "link": "https://github.com/jameson-pi/auto-portfolio"
+        },{
+            "name": "Auto-Gen Portfolio",
+            "description": "A portfolio generator for developers.",
+            "technologies": [
+                "svelte",
+                "css",
+                "javascript"
+            ]
         }
     ]
 }
