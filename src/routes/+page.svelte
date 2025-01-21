@@ -1,7 +1,7 @@
 
 <script>
     import data from "$lib/info.json";
-    import header from "$lib/header.svelte";
+    import Header from "$lib/header.svelte";
     let name = data.name;
     let title = data.title;
     let description = data.summary;
@@ -62,7 +62,7 @@ h2 {
 </style>
 
 <div class="container">
-
+    <Header />
     <div class="title">
         <h1>{name}</h1>
         <h2>{title}</h2>
@@ -89,6 +89,12 @@ h2 {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <a href={project.link} target="_blank">View Project</a>
+                <h4>Technologies</h4>
+                <ul>
+                    {#each project.technologies as tech}
+                        <li><p>{tech}</p></li>
+                    {/each}
+                </ul>
             </div>
         {/each}
     </div>
